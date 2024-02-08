@@ -3,7 +3,7 @@ import streamlit as st
 import plotly.express as px
 
 # Load data
-@st.cache
+@st.cache_data
 def load_data():
     df = pd.read_csv("D:\\Data science with streamlit\\code\\streamlit\\data\\airbnb.csv")
     return df
